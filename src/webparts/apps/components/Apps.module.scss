@@ -1,0 +1,284 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+// :root {
+//   --primaryColor:'';
+//   --darkerShade:''
+// }
+
+::placeholder {
+  color: #b9b9b9;
+}
+.AppDiv {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+.GridLayoutDiv {
+  background-color: #f9f9f9;
+  //margin: 8px;
+  border-radius: 4px;
+  // width: 1000px;
+  height: 520px;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.Title {
+  //color:var(--primaryColor);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto-SemiBold";
+  padding: 0 10px;
+}
+.leftNavigationDiv {
+  border-radius: 4px;
+  height: 520px;
+  background-color: #022f5e;
+}
+.leftNavigation {
+  //display: block;
+  list-style-type: none;
+  border-bottom: 1px solid #f9f9f9;
+  text-decoration: none;
+  color: #f9f9f9;
+  padding: 22px 15px;
+  // width: 200px;
+  cursor: pointer;
+  font-family: "Roboto-Medium";
+  font-size: 14px;
+}
+
+// .leftNavigation:hover{
+//   background-color: var(--darkerShade)
+// }
+
+// .leftNavigationActive{
+//   background-color: var(--darkerShade)
+// }
+
+.TopTabNav {
+  // border-bottom: 1px solid lightgrey;
+  // // border-bottom-style: solid;
+  // // border-bottom-color: lightgrey;
+  // // border-bottom-width: 2px;
+  // padding: 0px 15px;
+  border: 0.5px solid #b4b4b4;
+  padding: 0 15px;
+  box-shadow: 2px 2px 20px #00000029;
+}
+.TopTabNav .alignRight {
+  justify-content: flex-end;
+}
+.topTabActive {
+  border-bottom: 4px solid;
+  //color: var(--primaryColor) !important;
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+}
+.topTab {
+  //margin: 20px;
+  color: #b9b9b9;
+  text-decoration: "none";
+  cursor: pointer;
+  padding: 20px 15px 15px 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Roboto-Medium";
+}
+
+.topTab:hover {
+  color: #b9b9b9;
+  text-decoration: "none";
+}
+.searchBox {
+  height: 40px;
+  display: block;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  color: #797979;
+  padding: 8px 15px !important;
+  font-size: 14px;
+  outline: none;
+}
+.AppSearchInput {
+  position: relative;
+  float: right;
+  padding: 9px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.AppSearchInput .searchIcon {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 20px;
+  color: #00a3e0;
+}
+.btnTabNavDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttonNav {
+  border-radius: 30px;
+  background-color: #e8e8e8 !important;
+  color: #787878;
+  padding: 10px 15px;
+  margin: 15px;
+  border: none;
+  outline: none !important;
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.56px;
+  cursor: pointer;
+  text-align: center;
+  //, justifyContent:'space-around'
+}
+.buttonNavActive {
+  //background-color: var(--primaryColor) !important;
+  color: white;
+  font-family: "Roboto-SemiBold";
+}
+#SelectAppsScrollDiv,
+.appScroll {
+  margin: 10px;
+}
+
+.appSelectionDiv {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+  // padding:10px;
+  text-align: center;
+  width: 155px;
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  text-transform: capitalize;
+  box-shadow: 0px 3px 6px #00000029;
+  font-family: "Roboto-SemiBold";
+  flex: 0 0 18%;
+}
+.appSelectionDiv p {
+  margin-bottom: 0;
+}
+.appSelectionDiv a {
+  text-decoration: none !important;
+}
+.appSelectionDiv:hover {
+  background-color: #848484;
+  color: #fff;
+}
+.appSelectionDiv:hover .linkButton {
+  color: #fff;
+}
+.leftNavigation:hover {
+  background-color: #848484;
+}
+// .appSelectionDiv:hover{
+//   background-color: var(--primaryColor);
+//   color:black;
+// }
+.appDivision {
+  display: "flex";
+  margin: 0px 0px 0px 10px;
+  flex-wrap: "wrap";
+  color: #191919;
+  // max-height: 350px;
+  // overflow-y: scroll;
+}
+
+.elementTextAlign {
+  text-align: start;
+}
+.leftNavigation.active {
+  background-color: #848484;
+}
+.linkButton {
+  text-decoration: none;
+  color: #191919;
+}
+.linkButton i {
+  font-size: 55px;
+}
+// .linkButton .fabricFont {
+//   font-family: "FabricMDL2Icons-15";
+// }
+//Theme Specific Change: Red
+.appDivRed .Title {
+  color: #ef5151;
+}
+.appDivRed .GridLayoutDiv .TopTabNav .topTabActive {
+  border-bottom-color: #ef5151;
+  color: #ef5151 !important;
+}
+.appDivRed .GridLayoutDiv .buttonNavActive,
+.appDivRed .leftNavigationDiv {
+  background-color: #ef5151 !important;
+}
+//
+//Theme Specific Change: Blue
+.appDivBlue .Title {
+  color: #022f5e;
+}
+.appDivBlue .GridLayoutDiv .TopTabNav .topTabActive {
+  border-bottom-color: #022f5e;
+  color: #022f5e !important;
+}
+.appDivBlue .GridLayoutDiv .buttonNavActive,
+.appDivBlue .leftNavigationDiv {
+  background-color: #022f5e !important;
+}
+//
+//Theme Specific Change: Gold
+.appDivGold .Title {
+  color: #b68a35;
+}
+.appDivGold .GridLayoutDiv .TopTabNav .topTabActive {
+  border-bottom-color: #b68a35;
+  color: #b68a35 !important;
+}
+.appDivGold .GridLayoutDiv .buttonNavActive,
+.appDivGold .leftNavigationDiv {
+  background-color: #b68a35 !important;
+}
+//
+//Theme Specific Change: Green
+.appDivGreen .Title {
+  color: #556222;
+}
+.appDivGreen .GridLayoutDiv .TopTabNav .topTabActive {
+  border-bottom-color: #556222;
+  color: #556222 !important;
+}
+.appDivGreen .GridLayoutDiv .buttonNavActive,
+.appDivGreen .leftNavigationDiv {
+  background-color: #556222 !important;
+}
+
+//
+@media only screen and (max-width: 576px) {
+  .AppSearchInput {
+    float: left;
+  }
+  .searchBox {
+    width: auto;
+  }
+  .topTab {
+    font-size: 14px;
+    padding-bottom: 0px;
+  }
+  .buttonNav {
+    margin: 10px 5px 5px 10px;
+    font-size: 14px;
+  }
+  .appScroll {
+    margin-top: 15px;
+  }
+}

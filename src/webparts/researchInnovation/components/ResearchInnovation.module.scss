@@ -1,0 +1,149 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.ResearchDiv {
+  background-color: #e8e8e8;
+  padding: 20px 20px 0px 20px;
+  text-align: start;
+}
+.Research {
+  //color:var(--primaryColor);
+  font-size: 30px;
+  font-family: "Roboto-Medium";
+  text-transform: uppercase;
+}
+.cardStyles {
+  border: 1px solid #b5b5b5 !important;
+  margin: 0 7px 0 7px !important;
+}
+.cardBodyStyles {
+  padding: 14px;
+}
+.ResearchTitle {
+  color: #0068b1;
+  font-size: 24px !important;
+  font-family: "Roboto-Bold";
+}
+.cardDisplayText {
+  color: #191919;
+  font-size: 20px !important;
+  font-family: "Roboto-Regular";
+}
+.ResearchImg {
+  height: 200px;
+  object-fit: cover;
+}
+.ResearchLearMore {
+  //color: var(--primaryColor) !important;
+  font-size: 20px !important;
+  font-family: "Roboto-Bold";
+}
+.aligncenter {
+  text-align: center;
+}
+.ReadMore {
+  color: #022F5E ;
+  border: 2px solid #022F5E ;
+  //border-radius: 0;
+  margin: 30px 20px 0px 0px;
+  display: inline-flex;
+  padding: 12px 18px;
+  outline: none;
+  background-color: transparent;
+  min-width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  //transition: all 0.5s ease;
+}
+.ReadMore:hover {
+  // min-width: 180px;
+  // color: #fff !important;
+  background-color: inherit;
+  border-color: inherit;
+}
+// .ResearchLearMore:hover{
+//   color: var(--primaryColor);
+//   //font-weight: bold;
+// }
+
+// .ResearchLoadMore{
+//   color: var(--primaryColor);
+//   border: 1px solid var(--primaryColor);
+//   border-radius: 0;
+//   margin: 0 auto;
+//   display: flex;
+//   padding: 10px 15px;
+//   outline: none !important;
+//   background-color: inherit;
+//   //min-width: 180px;
+//   justify-content: space-between;
+//   align-items: center;
+//   font-family: 'Poppins-Regular';
+//   width: 250px;
+//   font-size:20px;
+//   letter-spacing: .8px;
+//   //transition: all 0.5s ease;
+// }
+// .ResearchLoadMore:hover{
+//   min-width: 220px;
+//   color: #fff !important;
+//   background-color: #6c757d;
+//   border-color: #6c757d;
+// }
+
+//Theme Specific Change: red
+.researchRed .Research,
+.researchRed .cardStyles .cardBodyStyles .ResearchLearMore,
+.researchRed .cardStyles .ResearchLearMore,
+.researchRed .cardStyles .cardBodyStyles .ResearchLearMore:hover,
+.researchRed .cardStyles .ResearchLearMore:hover,
+.researchRed .ReadMore {
+  color: #ef5151;
+}
+.researchBlue .ReadMore {
+  border-color: #ef5151;
+}
+//
+//Theme Specific Change: Blue
+.researchBlue .Research,
+.researchBlue .cardStyles .ResearchLearMore,
+.researchBlue .cardStyles .cardBodyStyles .ResearchLearMore:hover,
+.researchBlue .cardStyles .ResearchLearMore:hover,
+.researchBlue .ReadMore {
+  color: #022F5E ;
+}
+.researchBlue .ReadMore {
+  border-color: #022F5E ;
+}
+//
+//Theme Specific Change: Gold
+.researchGold .Research,
+.researchGold .cardStyles .ResearchLearMore,
+.researchGold .cardStyles .cardBodyStyles .ResearchLearMore:hover,
+.researchGold .cardStyles .ResearchLearMore:hover,
+.researchGold .ReadMore {
+  color: #b68a35;
+}
+.researchGold .ReadMore {
+  border-color: #b68a35;
+}
+//
+//Theme Specific Change: Green
+.researchGreen .Research,
+.researchGreen .cardStyles .ResearchLearMore,
+.researchGreen .cardStyles .cardBodyStyles .ResearchLearMore:hover,
+.researchGreen .cardStyles .ResearchLearMore:hover,
+.researchGreen .ReadMore {
+  color: #556222;
+}
+.researchGreen .ReadMore {
+  border-color: #556222;
+}
+//
+@media only screen and (max-width: 767px) {
+  .cardStyles {
+    margin: 0 7px 10px !important;
+  }
+}

@@ -1,0 +1,87 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.elementTextAlign {
+  text-align: start;
+}
+
+//Carousel
+.ReadMore {
+  color: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  //border-radius: 0;
+  margin: 15px 0px 0px 0px;
+  display: flex;
+  padding: 5px 18px;
+  outline: none;
+  background-color: transparent;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  //transition: all 0.5s ease;
+}
+
+.ReadMore:hover {
+  // min-width: 180px;
+  // color: #fff !important;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.carouselCaption {
+  font-family: "Roboto-Regular";
+  position: absolute;
+  left: 0 !important;
+  right: 0;
+  z-index: 10;
+  color: #fff;
+  padding: 10px 15px;
+  // top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carouselCaption .title {
+  font-size: 28px;
+  color: #f9f9f9;
+  font-family: "Roboto-Bold";
+}
+.carouselCaption .subTitle {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Roboto-Medium";
+  // margin-top: 50px;
+  margin-bottom: 10px;
+}
+.carouselCaption .titleDescription {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto-Regular";
+}
+
+.w-100 {
+  width: 138% !important;
+}
+.linkButton {
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 576px) {
+  .carouselCaption {
+    padding: 35px 20px;
+  }
+  .carouselCaption .title {
+    font-size: 24px;
+  }
+  .carouselCaption .subTitle {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .carouselCaption .titleDescription {
+    font-size: 14px;
+  }
+  .ReadMore {
+    font-size: 14px;
+  }
+}

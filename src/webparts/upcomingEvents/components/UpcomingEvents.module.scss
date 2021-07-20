@@ -1,0 +1,232 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.elementTextAlign {
+  text-align: start;
+}
+//Upcoming styles
+.Upcoming {
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #022f5e;
+  padding: 10px 20px;
+  //margin-top: 20px;
+  height: 200px;
+  text-decoration: none;
+}
+
+.upcomingEvents {
+  // color: var(--primaryColor);
+  font-size: 28px;
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+.dateMonth {
+  //color: var(--primaryColor);
+  font-size: 40px;
+  font-family: "Roboto-SemiBold";
+  text-transform: capitalize;
+}
+.dayYear {
+  // color: var(--primaryColor);
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+}
+.upcomingEventDescription {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  font-family: "Roboto-Regular";
+}
+
+.UpcomingButton:hover {
+  color: var(--primaryColor);
+  //font-weight: bold;
+}
+.linkButton {
+  text-decoration: none !important;
+  color: #f9f9f9 !important;
+  font-family: "Roboto-Regular";
+}
+.ReadMore {
+  color: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  //border-radius: 0;
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  padding: 5px 18px;
+  outline: none;
+  background-color: transparent;
+
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  //transition: all 0.5s ease;
+}
+.ReadMore:hover {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.each-event {
+  display: flex;
+  align-items: center;
+  padding: 0 0;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.noRecords {
+  font-size: 20px;
+  font-family: Roboto-bold;
+}
+.events .event-date {
+  min-width: 60px;
+  height: 100%;
+  border: 1px solid #b9b9b9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1px 9px 7px;
+}
+
+.events .event-date .date {
+  display: block;
+  font-size: 20px;
+  color: #787878;
+  font-family: Roboto-Bold;
+}
+
+.events .event-date .dateActive {
+  color: #022f5e;
+}
+
+.events .event-date .month {
+  display: block;
+  background-color: #b9b9b9;
+  margin: -1px;
+  color: #787878;
+  padding: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.events .event-date .monthActive {
+  color: #fff;
+  background-color: #022f5e;
+}
+
+.events .eventDateActive {
+  border-color: #022f5e;
+}
+
+.events .event-title {
+  font-size: 16px;
+  color: #191919;
+  margin: 0 0 4px;
+  font-family: Roboto-Regular;
+}
+
+.events .event-subtitle {
+  font-size: 14px;
+  color: #787878;
+  margin: 0;
+  font-family: Roboto-Regular;
+}
+
+.events .eventTitleActive {
+  font-size: 18px;
+  font-family: Roboto-SemiBold;
+}
+
+.events .location {
+  color: #909191;
+  font-size: 14px;
+  font-family: Roboto-Regular;
+  margin-bottom: 0;
+}
+.Upcoming .each-event:only-child {
+  margin: 40px 0;
+}
+//
+//upcoming styles
+//Theme Specific Change: red
+.upcomingRed .upcomingEvents,
+.upcomingRed .dateMonth,
+.upcomingRed .dayYear,
+.upcomingRed .events .dateActive,
+.upcomingRed .eventTitleActive,
+.upcomingRed .noRecords {
+  color: #ef5151;
+}
+.upcomingRed .events .eventDateActive,
+.upcomingRed {
+  border-color: #ef5151;
+}
+.upcomingRed .events .monthActive {
+  background-color: #ef5151;
+}
+//
+//Theme Specific Change: blue
+.upcomingBlue .upcomingEvents,
+.upcomingBlue .dateMonth,
+.upcomingBlue .dayYear,
+.upcomingBlue .events .dateActive,
+.upcomingBlue .eventTitleActive,
+.upcomingBlue .noRecords {
+  color: #022f5e;
+}
+.upcomingBlue .events .eventDateActive,
+.upcomingBlue {
+  border-color: #022f5e;
+}
+.upcomingBlue .events .monthActive {
+  background-color: #022f5e;
+}
+//
+//Theme Specific Change: Gold
+.upcomingGold .upcomingEvents,
+.upcomingGold .dateMonth,
+.upcomingGold .dayYear,
+.upcomingGold .events .dateActive,
+.upcomingGold .eventTitleActive,
+.upcomingGold .noRecords {
+  color: #b68a35;
+}
+.upcomingGold .events .eventDateActive,
+.upcomingGold {
+  border-color: #b68a35;
+}
+.upcomingGold .events .monthActive {
+  background-color: #b68a35;
+}
+//
+//Theme Specific Change: Green
+.upcomingGreen .upcomingEvents,
+.upcomingGreen .dateMonth,
+.upcomingGreen .dayYea,
+.upcomingGreen .events .dateActive,
+.upcomingGreen .eventTitleActive,
+.upcomingGreen .noRecords {
+  color: #556222;
+}
+.upcomingGreen .events .eventDateActive,
+.upcomingGreen {
+  border-color: #556222;
+}
+.upcomingGreen .events .monthActive {
+  background-color: #556222;
+}
+@media only screen and (max-width: 576px) {
+  .Upcoming {
+    padding: 20px;
+  }
+  .upcomingEvents {
+    font-size: 24px;
+  }
+  .upcomingEventDescription {
+    font-size: 16px;
+  }
+}

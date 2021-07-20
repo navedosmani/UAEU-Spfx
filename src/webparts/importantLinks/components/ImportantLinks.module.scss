@@ -1,0 +1,82 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.importantLinksAndDirectory {
+  padding: 35px;
+}
+
+.ImportantLinks {
+  padding: 20px 17px;
+  border: 2px solid;
+  border-radius: 8px;
+  //background-color:var(--primaryColor);
+  margin: 35px 0 0 0;
+  //box-shadow: 0px 3px 6px #00000029;
+}
+
+.ImportantLinksTextAlign {
+  text-align: start;
+}
+
+.ImportantLinks h5 {
+  color: #f9f9f9;
+  font-size: 30px;
+  font-family: "Roboto-Medium";
+  text-transform: uppercase;
+}
+
+.ImportantLinks hr {
+  border-color: #00a3e0;
+  border-width: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.ImpLinks a {
+  text-decoration: none !important;
+  padding: 10px 20px 25px 20px;
+  //margin-bottom: 30px;
+  font-size: 18px;
+  color: #f9f9f9 !important;
+  display: block;
+  font-family: "Roboto-Regular";
+}
+.ImpLinks a:hover {
+  transition: 0.2s;
+  color: #848484 !important;
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.fontIconStyle {
+  font-size: 13px;
+  margin-right: 20px;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+//Theme Specific Change: red
+.importantLinksRed {
+  background-color: #ef5151;
+  border-color: #ef5151;
+}
+//
+//Theme Specific Change: blue
+.importantLinksBlue {
+  background-color: #022F5E ;
+  border-color: #022F5E ;
+}
+//
+//Theme Specific Change: Gold
+.importantLinksGold {
+  background-color: #b68a35;
+  border-color: #b68a35;
+}
+//
+//Theme Specific Change: Green
+.importantLinksGreen {
+  background-color: #556222;
+  border-color: #556222;
+}
+//

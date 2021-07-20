@@ -1,0 +1,351 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.calendarEvents {
+  .event {
+    border: 1px solid;
+    margin: 10px 0;
+    transition: all 0.5s ease;
+    // box-shadow: 0px 3px 6px #00000029;
+  }
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 10px 7px;
+    color: #0068b1;
+    font-weight: bold;
+  }
+
+  .event-header h5 {
+    font-size: 20px;
+    font-family: "Roboto-SemiBold";
+    text-align: left;
+    margin: 0;
+  }
+
+  .event-header .event-btn button {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-family: "Roboto-Regular";
+  }
+  .event-header .event-btn .dropdown {
+    overflow: hidden;
+  }
+
+  .event-header .event-btn .dropdown .dropbtn {
+    padding: 3px 10px;
+    margin: 0; /* Important for vertical align on mobile phones */
+    font-size: 10px;
+    font-family: "Roboto-Regular";
+    border-radius: 4px;
+  }
+  .event-header .event-btn .dropdown .dropbtn .iconColor {
+    color: #022F5E ;
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+  .event-header .event-btn .dropdown .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    width: fit-content;
+    border: 1px solid lightgrey;
+    //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .event-header .event-btn .dropdown .dropdownContent a {
+    float: none;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Roboto-Regular";
+  }
+  /* Add a grey background color to dropdown links on hover */
+  .event-header .event-btn .dropdown .dropdownContent a:hover {
+    background-color: #f8f9fa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .event-header .event-btn .dropdown .show {
+    display: block !important;
+  }
+  .event-header .event-btn {
+    text-transform: uppercase;
+  }
+
+  .event-date {
+    min-width: 60px;
+    height: 100%;
+    border: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 1px 9px 7px;
+    // margin-top: 1px;
+  }
+
+  .eventDateActive {
+    border-color: #022F5E ;
+  }
+
+  .event-date .calendarDate {
+    display: block;
+    font-size: 24px;
+    color: #787878;
+    font-family: "Roboto-Bold";
+  }
+  .event-date .calendarDateActive {
+    color: #022F5E ;
+    background-color: #fff;
+    font-family: "Roboto-Bold";
+  }
+
+  .event-date .calendarmonth {
+    display: block;
+    background-color: #b9b9b9;
+    margin: -1px;
+    color: #787878;
+    padding: 2px;
+    text-transform: uppercase;
+  }
+  .event-date .calendarmonthActive {
+    color: white;
+    background-color: #022F5E ;
+  }
+
+  .event-body {
+    padding: 10px 10px;
+  }
+  .each-event {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d5d5d5;
+    text-decoration: none;
+  }
+  .event-title {
+    font-size: 14px;
+    color: #191919;
+    margin: 0 0 4px 0;
+    font-family: "Roboto-Regular";
+  }
+  .contrast .event-title,
+  .contrast .eventTitleDefault {
+    color: #fff !important;
+  }
+  .event-subtitle {
+    font-size: 12px;
+    color: #787878;
+    margin: 0;
+    font-family: "Roboto-Regular";
+  }
+  .eventTitleActive {
+    font-size: 16px;
+    //color:var(--primaryColor);
+    font-family: "Roboto-SemiBold";
+  }
+  .eventTitleDefault {
+    font-size: 16px;
+    color: #191919;
+    font-family: "Roboto-SemiBold";
+  }
+}
+//Theme Specific Change: Red
+.calendarEventsRed .event,
+.calendarEventsRed .event .event-body .each-event .eventDateActive {
+  border-color: #ef5151;
+}
+.calendarEventsRed .event .event-header {
+  border-bottom-color: #ef5151;
+}
+.calendarEventsRed .event .event-header h5,
+.calendarEventsRed .event .event-header .event-btn .dropdown .dropbtn,
+.calendarEventsRed .event .event-header .event-btn .dropdown .dropdownContent a,
+.calendarEventsRed
+  .event
+  .event-body
+  .each-event
+  .event-title
+  .event-subtitle
+  .eventTitleActive,
+.calendarEventsRed
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropbtn
+  .iconColor,
+.calendarEventsRed .event-date .calendarDateActive {
+  color: #ef5151;
+}
+.calendarEventsRed .event .event-header .event-btn button {
+  color: #ef5151;
+  border-color: #ef5151;
+}
+
+.calendarEventsRed
+  .event
+  .event-body
+  .each-event
+  .eventDateActive
+  .calendarmonthActive {
+  background-color: #ef5151;
+}
+//
+//Theme Specific Change: Blue
+.calendarEventsBlue .event,
+.calendarEventsBlue .event .event-body .each-event .eventDateActive {
+  border-color: #022F5E ;
+}
+.calendarEventsBlue .event .event-header {
+  border-bottom-color: #022F5E ;
+}
+.calendarEventsBlue .event .event-header h5,
+.calendarEventsBlue .event .event-header .event-btn .dropdown .dropbtn,
+.calendarEventsBlue
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropdownContent
+  a,
+.calendarEventsBlue
+  .event
+  .event-body
+  .each-event
+  .event-title
+  .event-subtitle
+  .eventTitleActive,
+.calendarEventsBlue
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropbtn
+  .iconColor,
+.calendarEventsBlue .event-date .calendarDateActive {
+  color: #022F5E ;
+}
+.calendarEventsBlue .event .event-header .event-btn button {
+  color: #022F5E ;
+  border-color: #022F5E ;
+}
+
+.calendarEventsBlue
+  .event
+  .event-body
+  .each-event
+  .eventDateActive
+  .calendarmonthActive {
+  background-color: #022F5E ;
+}
+//
+//Theme Specific Change: Gold
+.calendarEventsGold .event,
+.calendarEventsGold .event .event-body .each-event .eventDateActive {
+  border-color: #b68a35;
+}
+.calendarEventsGold .event .event-header {
+  border-bottom-color: #b68a35;
+}
+.calendarEventsGold .event .event-header h5,
+.calendarEventsGold .event .event-header .event-btn .dropdown .dropbtn,
+.calendarEventsGold
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropdownContent
+  a,
+.calendarEventsGold
+  .event
+  .event-body
+  .each-event
+  .event-title
+  .event-subtitle
+  .eventTitleActive,
+.calendarEventsGold
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropbtn
+  .iconColor,
+.calendarEventsGold .event-date .calendarDateActive {
+  color: #b68a35;
+}
+.calendarEventsGold .event .event-header .event-btn button {
+  color: #b68a35;
+  border-color: #b68a35;
+}
+
+.calendarEventsGold
+  .event
+  .event-body
+  .each-event
+  .eventDateActive
+  .calendarmonthActive {
+  background-color: #b68a35;
+}
+//
+//Theme Specific Change: Green
+.calendarEventsGreen .event,
+.calendarEventsGreen .event .event-body .each-event .eventDateActive {
+  border-color: #556222;
+}
+.calendarEventsGreen .event .event-header {
+  border-bottom-color: #556222;
+}
+.calendarEventsGreen .event .event-header h5,
+.calendarEventsGreen .event .event-header .event-btn .dropdown .dropbtn,
+.calendarEventsGreen
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropdownContent
+  a,
+.calendarEventsGreen
+  .event
+  .event-body
+  .each-event
+  .event-title
+  .event-subtitle
+  .eventTitleActive,
+.calendarEventsGreen
+  .event
+  .event-header
+  .event-btn
+  .dropdown
+  .dropbtn
+  .iconColor,
+.calendarEventsGreen .event-date .calendarDateActive {
+  color: #556222;
+}
+.calendarEventsGreen .event .event-header .event-btn button {
+  color: #556222;
+  border-color: #556222;
+}
+
+.calendarEventsGreen
+  .event
+  .event-body
+  .each-event
+  .eventDateActive
+  .calendarmonthActive {
+  background-color: #556222;
+}
+//

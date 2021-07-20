@@ -1,0 +1,263 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.directory-search {
+  border: 1px solid;
+  border-radius: 8px;
+  //box-shadow: 0px 3px 6px #00000029;
+  margin: 35px 0 0 0;
+  height: 100%;
+  padding: 20px 17px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 6px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 13px;
+}
+.directory-search .card-body {
+  padding: 15px;
+}
+.directory-search .search-result .card:first-child {
+  margin-top: 1rem;
+}
+.card-title {
+  margin-bottom: 0.75rem;
+  //padding-left: 14px;
+  font-size: 18px;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.directory-search .search-result .card-body .card-title span.badge {
+  border: 1px solid #707070;
+  color: #fff;
+  padding: 8px 5px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 11px;
+  text-transform: uppercase;
+}
+.directory-search .search-result .card-body .card-title .it-dept {
+  color: white;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: blue;
+  margin-left: 10px;
+}
+.badge-admin {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: black;
+  margin-left: 10px;
+}
+.badge-finance {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: rgb(223, 13, 13);
+  margin-left: 10px;
+}
+.directory-search .card-body .card-text,
+.directory-search .card-body .card-text a {
+  margin-bottom: 0px;
+  color: #232222;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Roboto-Regular";
+}
+.directory-search .department {
+  margin-bottom: 2px;
+  color: #232222;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Roboto-Regular";
+  margin-top: 3px;
+}
+.directory-search .card-body .card-title {
+  margin-bottom: 12px;
+  color: #2b2425;
+  font-size: 20px;
+  font-family: "Roboto-Bold";
+}
+.dept {
+  color: white;
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.p1search {
+  font-family: "Roboto-Medium";
+  // color: var(--primaryColor);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.search {
+  width: 100%;
+  height: 40px;
+  // border-radius: 1%;
+  border: 1px solid #d6d6d6 !important ;
+  // border-style: solid;
+  // border: none;
+  // border: groove 1px rgba(161, 155, 155, 0.932);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+.searchInputText {
+  padding-bottom: 10px;
+  position: relative;
+}
+.noRecords {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 120px;
+  //background: #ddd;
+  /* color: #fff; */
+  width: 50%;
+  margin: 50px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+.searchInputText .searchIcon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  color: #00a3e0;
+  cursor: pointer;
+}
+.elementTextAlign {
+  text-align: start;
+}
+.ResearchLoadMore {
+  // color: var(--primaryColor);
+  border: 2px solid;
+  // border-radius: 0;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 15px;
+  outline: none;
+  background-color: inherit;
+  justify-content: space-between;
+  align-items: center;
+  //transition: all 0.5s ease;
+  width: 250px;
+  font-size: 20px;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  // height: 100vh;
+  align-items: flex-start;
+  position: relative;
+  top: 40px;
+}
+//Theme Specific Change: red
+.directorySearchRed {
+  border-color: #ef5151;
+}
+.directorySearchRed .p1search {
+  color: #ef5151;
+}
+.directorySearchRed .ResearchLoadMore {
+  color: #ef5151;
+  border-color: #ef5151;
+}
+//
+//Theme Specific Change: Blue
+.directorySearchBlue {
+  border-color: #022f5e;
+}
+.directorySearchBlue .p1search {
+  color: #022f5e;
+}
+.directorySearchBlue .ResearchLoadMore {
+  color: #022f5e;
+  border-color: #022f5e;
+}
+//
+//Theme Specific Change: Gold
+.directorySearchGold {
+  border-color: #b68a35;
+}
+.directorySearchGold .p1search {
+  color: #b68a35;
+}
+.directorySearchGold .ResearchLoadMore {
+  color: #b68a35;
+  border-color: #b68a35;
+}
+//
+//Theme Specific Change: Green
+.directorySearchGreen {
+  border-color: #556222;
+}
+.directorySearchGreen .p1search {
+  color: #556222;
+}
+.directorySearchGreen .ResearchLoadMore {
+  color: #556222;
+  border-color: #556222;
+}
+//
+// .ResearchLoadMore:hover{
+//   min-width: 220px;
+//   color: #fff !important;
+//   background-color: #6c757d;
+//   border-color: #6c757d;
+// }

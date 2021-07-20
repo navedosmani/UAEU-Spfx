@@ -1,0 +1,27 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.SocialWall {
+  color: var(--primaryColor);
+  font-size: 22px;
+  font-family: "Roboto-Bold";
+  //padding: 15px 20px 0px 20px;
+}
+.socialWallSection {
+  padding: 20px 0px 20px 10px;
+}
+/* Theme Specific Change: Red */
+.socialWallRed {
+  color: #ef5151;
+}
+/* Theme Specific Change: blue */
+.socialWallBlue {
+  color: #022F5E ;
+}
+/*Theme Specific Change: Gold */
+.socialWallGold {
+  color: #b68a35;
+}
+/* Theme Specific Change: Green */
+.socialWallGreen {
+  color: #556222;
+}

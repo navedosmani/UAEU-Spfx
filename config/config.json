@@ -1,0 +1,118 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "apps-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/apps/AppsWebPart.js",
+          "manifest": "./src/webparts/apps/AppsWebPart.manifest.json"
+        }
+      ]
+    },
+    "carousel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/carousel/CarouselWebPart.js",
+          "manifest": "./src/webparts/carousel/CarouselWebPart.manifest.json"
+        }
+      ]
+    },
+    "events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/events/EventsWebPart.js",
+          "manifest": "./src/webparts/events/EventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "important-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/importantLinks/ImportantLinksWebPart.js",
+          "manifest": "./src/webparts/importantLinks/ImportantLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "research-innovation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/researchInnovation/ResearchInnovationWebPart.js",
+          "manifest": "./src/webparts/researchInnovation/ResearchInnovationWebPart.manifest.json"
+        }
+      ]
+    },
+    "social-wall-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/socialWall/SocialWallWebPart.js",
+          "manifest": "./src/webparts/socialWall/SocialWallWebPart.manifest.json"
+        }
+      ]
+    },
+    "directory-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/directorySearch/DirectorySearchWebPart.js",
+          "manifest": "./src/webparts/directorySearch/DirectorySearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "welcome-user-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/welcomeUser/WelcomeUserWebPart.js",
+          "manifest": "./src/webparts/welcomeUser/WelcomeUserWebPart.manifest.json"
+        }
+      ]
+    },
+    "upcoming-events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/upcomingEvents/UpcomingEventsWebPart.js",
+          "manifest": "./src/webparts/upcomingEvents/UpcomingEventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "news-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/news/NewsWebPart.js",
+          "manifest": "./src/webparts/news/NewsWebPart.manifest.json"
+        }
+      ]
+    },
+    "calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/calendar/CalendarWebPart.js",
+          "manifest": "./src/webparts/calendar/CalendarWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "AppsWebPartStrings": "lib/webparts/apps/loc/{locale}.js",
+    "CarouselWebPartStrings": "lib/webparts/carousel/loc/{locale}.js",
+    "EventsWebPartStrings": "lib/webparts/events/loc/{locale}.js",
+    "ImportantLinksWebPartStrings": "lib/webparts/importantLinks/loc/{locale}.js",
+    "ResearchInnovationWebPartStrings": "lib/webparts/researchInnovation/loc/{locale}.js",
+    "SocialWallWebPartStrings": "lib/webparts/socialWall/loc/{locale}.js",
+    "DirectorySearchWebPartStrings": "lib/webparts/directorySearch/loc/{locale}.js",
+    "WelcomeUserWebPartStrings": "lib/webparts/welcomeUser/loc/{locale}.js",
+    "UpcomingEventsWebPartStrings": "lib/webparts/upcomingEvents/loc/{locale}.js",
+    "NewsWebPartStrings": "lib/webparts/news/loc/{locale}.js",
+    "CalendarWebPartStrings": "lib/webparts/calendar/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
